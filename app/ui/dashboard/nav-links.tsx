@@ -20,11 +20,11 @@ const links = [
 ];
 
 export default function NavLinks() {
+  const pathName = usePathname();
   return (
     <>
       {links.map((link) => {
         const LinkIcon = link.icon;
-        const pathName = usePathname();
         return (
           <Link
             key={link.name}
